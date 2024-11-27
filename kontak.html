@@ -9,6 +9,9 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="asset/img/logo.png" type="image/x-icon">
   <!-- Box Icons -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -38,6 +41,36 @@
       Pondok Pesantren Miftahul Huda Patikan
     </p>
   </div>
+
+
+  <section>
+    <div class="container">
+      <h2 class="text-center mb-4">Kontak Kami</h2>
+      <div class="row flex-column flex-md-row">
+        <div class="col-md-6 px-0">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8143303298716!2d107.6553878750785!3d-6.9127903676564895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e749856dbeab%3A0xf8fdb5c8ba13e918!2sSmarts%20Umrah%20Antapani%20Bandung!5e0!3m2!1sid!2sid!4v1723260953849!5m2!1sid!2sid"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="regis">
+            <div class="form-container">
+              <p class="title">Message</p>
+              <form id="contact-form" class="form">
+                <input type="text" id="name" name="name" class="form-control mb-3" placeholder="Name" required>
+                <textarea id="message" name="message" class="form-control mb-3" rows="5"
+                  placeholder="Write your message" required></textarea>
+                <button type="submit" class=" form-btn" onclick="sendToWhatsApp()">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

@@ -1,24 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Reset */
-body,
-ul {
+body {
+
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
 }
+
+body,
+html {
+  overflow: auto;
+}
+
 
 /* Navbar */
 .navbar {
+  position: fixed;
   top: 0;
-  position: sticky;
-  box-shadow: 0px 1px 5px 0px teal;
-  padding: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 2px 5px rgba(61, 213, 247, 0.1);
+  padding: 15px 20px;
+  background-color: white;
   color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
 }
+
 
 .navbar .logo {
   font-size: 25px;
@@ -86,6 +98,59 @@ ul {
 
 
 
+.map {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.form-container {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: teal;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  /* transition: background 0.3s ease; */
+}
+
+.form-btn:hover {
+  background: transparent;
+  border: 1px solid teal;
+  color: black;
+}
+
+
 
 /* Page Home Footer */
 .footer-bg {
@@ -128,11 +193,10 @@ ul {
 }
 
 
-/* Mobile Navigation */
 @media (max-width: 768px) {
   .navbar ul {
     flex-direction: column;
-    background-color: #fefffe;
+    background-color: teal;
     position: fixed;
     top: 0;
     left: -250px;
@@ -140,7 +204,7 @@ ul {
     width: 250px;
     padding: 20px;
     transition: left 0.3s ease;
-    z-index: 1;
+    z-index: 99;
   }
 
   .navbar ul.active {
@@ -154,5 +218,14 @@ ul {
   .navbar ul li {
     margin: 20px 0;
     text-align: center;
+  }
+
+  .navbar ul li a {
+    color: #f8f9fa;
+  }
+
+  .hero img {
+    margin-top: 10px;
+    width: 70%;
   }
 }
