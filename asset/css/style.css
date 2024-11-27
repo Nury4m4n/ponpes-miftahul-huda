@@ -61,7 +61,7 @@ ul {
 }
 
 .navbar .img img {
-  width: 30px;
+  width: 20px;
   margin-right: 5px;
 }
 
@@ -120,6 +120,7 @@ ul {
 
 .footer-link:hover {
   text-decoration: underline;
+  color: #000;
 }
 
 .footer-bottom {
